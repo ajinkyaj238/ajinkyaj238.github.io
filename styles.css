@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", "Chivo", "Arial Narrow", "Dancing Script";
+}
+
+body{
+    background-color: #313338;
+    min-height : 100vh; 
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 50px;
+    display: flex;
+    /* background-color: #313338; */
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100; 
+    color: white;   
+}
+
+header .name{
+    font-size: 1.5em;
+    color: white;
+    user-select: none; 
+    
+}
+
+header .navigation a{
+    text-shadow: 0 0 10px #000;
+    font-size: 0.9em;
+    color: white;
+    font-weight: 600;
+    text-decoration: none; 
+    margin-left: 10px;
+    padding: 5px 8px;
+    /* background: #2b2d31; */
+    transition: all 0.3s ease;
+}
+
+header .navigation a:hover{
+    font-size: 1.3em;
+    background: #2b2d31;
+    border-radius: 15px;
+    transform: scale(1.5);
+}
+
+.parallax{
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('deformable_mirror.jpg') no-repeat center center/cover;
+    background-position: center; 
+    background-attachment: fixed;
+    backdrop-filter: blur(100px);
+
+}
+
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 4em;
+    font-family: "Dancing Script";
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 100px 100px 100px #000;
+    z-index: 1; 
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the height of the container to full viewport height */
+}
+
+.about-box {
+    background-color: #313338;
+    padding: 20px;
+    border-radius: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+    color: white;
+}
+
+.about-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-box p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.info-box {
+    background-color: #1e1f22; /* Change to the color you want */
+    padding: 20px;
+    border-radius: 20px; /* This will make the box curved */
+    width: 80%; /* Adjust as needed */
+    height: 80%; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row; /* Ensure the flex items are laid out in a row */
+    flex-wrap: nowrap;
+}
+
+.text-section, .image-section {
+    flex: 1; /* This will make each section take up half of the .info-box */
+    padding: 20px; /* Add some padding */
+    color: white;
+}
+
+.image-section {
+    background: url('sample.png') no-repeat center center; /* Replace with your image path */
+    background-size: contain; /* This will make the image cover the entire .image-section */
+}
+
+/* 1e1f22 */
+/* 2b2d31 */
+
