@@ -132,7 +132,7 @@ header .navigation a:hover{
 }
 
 .image-section {
-    background: url('sample.png') no-repeat center center; /* Replace with your image path */
+    background: url('deformable_mirror1.jpg') no-repeat center center; /* Replace with your image path */
     background-size: contain; /* This will make the image cover the entire .image-section */
 }
 
