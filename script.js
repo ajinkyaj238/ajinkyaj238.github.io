@@ -1,5 +1,5 @@
 const parallaxText = document.getElementById('text');
-const texts = ['Greetings!', '您好!', '¡Hola!', 'नमस्कार!', '!مرحبًا', '안녕하세요!', '!שלום', 'Hallo!', 'こんにちは!', 'สวัสดีครับ!', 'Bonjour!']
+const texts = ['Hello!', '您好!', '¡Hola!', 'नमस्कार!', '!مرحبًا', '안녕하세요!', '!שלום', 'Hallo!', 'こんにちは!', 'สวัสดีครับ!', 'Bonjour!']
 
 // Set the initial index
 let currentIndex = 0;
